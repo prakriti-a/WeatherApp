@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:background="@drawable/btn_bg6"
     tools:context=".MainActivity">
 
     <EditText
@@ -16,21 +16,111 @@
         android:hint="@string/location"
         android:inputType="text"
         android:maxLength="50"
-        android:layout_margin="@dimen/margin"/>
+        android:layout_margin="@dimen/margin"
+        android:autofillHints="@string/cities"/>
 
     <Button
         android:id="@+id/btnGetWeather"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="@dimen/size"
         android:text="@string/get_weather" />
 
     <TextView
-        android:id="@+id/txtWeatherInfo"
+        android:id="@+id/txtForecast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin"
+        android:text="@string/forecast"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/temp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/time"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/city"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/country"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/humidity"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtMinTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/min_temp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtMaxTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/max_temp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtSunrise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/sunrise"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <TextView
+        android:id="@+id/txtSunset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:text="@string/sunset"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textSize="@dimen/size"
-        android:gravity="center"
-        android:textColor="@color/black"/>
+        android:text="@string/clear"/>
 
 </LinearLayout>
